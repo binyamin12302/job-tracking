@@ -38,7 +38,6 @@ app.use(express.json());
 app.use(helmet());
 app.use(xss());
 app.use(mongoSanitize());
-mongoose.set('strictQuery', true);
 
 
 app.use('/api/v1/auth', authRouter);

@@ -46,7 +46,7 @@ app.use('/api/v1/jobs', authenticateUser, jobsRouter);
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../Frontend/build', 'index.html'))
 });
-
+ 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 

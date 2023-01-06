@@ -39,7 +39,7 @@ This project require some perquisites and dependencies to be installed, you can 
 2. go to project folder
 
    ```sh
-   cd jobify
+   cd job-tracking-main
    ```
 
 3. install dependencies

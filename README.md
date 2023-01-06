@@ -45,7 +45,7 @@ This project require some perquisites and dependencies to be installed, you can 
 3. install dependencies
 
    ```bash
-   npm run install
+   npm run install && cd client npm run install
    ```
 
 4. Environmental Variables Set up

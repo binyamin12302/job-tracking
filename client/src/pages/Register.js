@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {  FormRow, Alert } from "../components";
+import { FormRow, Alert } from "../components";
 import Wrapper from "../assets/wrappers/RegisterPage";
 import { useAppContext } from "../context/appContext";
 import { useNavigate } from 'react-router-dom';
@@ -35,25 +35,23 @@ const Register = () => {
     }
     const currentUser = { name, email, password };
     if (isMember) {
-      setupUser({currentUser, endPoint: 'login', alertText: 'Login Successful! Redirecting...' });
+      setupUser({ currentUser, endPoint: 'login', alertText: 'Login Successful! Redirecting...' });
     } else {
-      setupUser({currentUser, endPoint: 'register', alertText: 'User Created! Redirecting...' });
+      setupUser({ currentUser, endPoint: 'register', alertText: 'User Created! Redirecting...' });
     }
   };
 
 
   useEffect(() => {
     if (user) {
-      setTimeout(() => {
-        navigate('/')
-      }, 3000);
+      navigate('/')
     }
   }, [user, navigate]);
 
   return (
     <Wrapper className='full-page'>
       <form className='form' onSubmit={onSubmit}>
-       
+
         <h3>{values.isMember ? "Login" : "Register"}</h3>
         {showAlert && <Alert />}
 

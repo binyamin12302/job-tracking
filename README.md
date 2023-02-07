@@ -4,6 +4,8 @@
 
 MERN Stack Application for tracking Job Search Process
 
+![screencapture-job-tracking-76xm-onrender-landing-2023-02-07-20_04_30](https://user-images.githubusercontent.com/57687331/217328965-6fa5a85f-8253-4ad3-8c68-6cb87d7f801a.png)
+
 ### Features
 
 - Login / Sign-up
